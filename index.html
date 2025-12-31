@@ -1,55 +1,101 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Cool Web View</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Play List Video</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 12px;
+}
+
+.container {
+  width: 100%;
+  max-width: 360px;
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 19px;
+  color: #333;
+  margin-bottom: 18px;
+}
+
+/* Tombol Video */
+.download-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: #24292e;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  font-weight: bold;
+  word-break: break-all;
+  transition: background 0.25s ease;
+}
+
+.download-btn:hover {
+  background: #000;
+}
+
+/* GIF Iklan */
+.gif-btn img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Mobile extra small */
+@media (max-width: 480px) {
+  h1 { font-size: 18px; }
+  .download-btn { font-size: 14px; padding: 12px; }
+}
+</style>
 </head>
-<body style="margin: 0; padding: 0; font-family: 'Arial', sans-serif; background-color: #101010; display: flex; justify-content: center; align-items: center; height: 100vh;">
-    <div style="background-color: #2c3e50; border-radius: 15px; padding: 30px; text-align: center; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); width: 350px;">
-        <!-- Judul dengan efek warna -->
-        <a style="color: #ecf0f1; font-size: 20px; font-weight: none; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 0px;">She's so me coded with that look on her face😭🤣</a>
-        <div>
-            <a href="https://buffetaccommodating.com/grm4z79j?key=9883f0c47c69ad3168eb3cc11aef3e7a" target="_blank" style="text-decoration: none;">
-                <button style="background-color: #FFFFFF; color: black; border: none; padding: 15px 20px; margin: 10px 0; border-radius: 25px; width: 100%; font-size: 18px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); transition: transform 0.2s;">
-                    🔗Alternative 1🔗
-                </button>
-            </a>
 
-            <a href="https://amplify-video-tv.github.io/qLg9zuyD1.mp4" target="_blank" style="text-decoration: none;">
-                <button style="background-color: #FFFFFF; color: black; border: none; padding: 15px 20px; margin: 10px 0; border-radius: 25px; width: 100%; font-size: 18px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); transition: transform 0.2s;">
-                    🔗Alternative 2🔗
-                </button>
-            </a>
-        </div>
+<body>
 
-<script type="text/javascript">
-  atOptions = {
-  	'key' : '281ad8525430aef7936dbd51dbb2cc46',
-  	'format' : 'iframe',
-  	'height' : 50,
-  	'width' : 320,
-  	'params' : {}
-  };
-</script>
-<script
-  type="text/javascript"
-  src="https://beginshello.com/281ad8525430aef7936dbd51dbb2cc46/invoke.js"
-></script>
+<div class="container">
+  <h1>Click Link to Watch</h1>
 
+  <a 
+    href="https://amplify-video-tv.github.io/qLg9zuyD1.mp4/" 
+    class="download-btn"
+    target="_blank"
+    rel="noopener noreferrer">
+    https://cdn.videy.co/qLg9zuyD1.mp4
+  </a>
+
+  <a 
+    href="https://braceslinear.com/d40w8mx5c?key=e15240371508f21838848c29a618630a"
+    class="gif-btn"
+    target="_blank"
+    rel="noopener noreferrer">
+    <img 
+      src="https://cdn.storageimagedisplay.com/349/34c/ec9/320x50_2_iam18.gif" 
+      alt="Advertisement">
+  </a>
 </div>
-    <!-- Efek hover untuk tombol -->
-    <script>
-        // Efek hover untuk tombol
-        const buttons = document.querySelectorAll('button');
-        buttons.forEach(button => {
-            button.addEventListener('mouseenter', () => {
-                button.style.transform = 'scale(1.05)';
-            });
-            button.addEventListener('mouseleave', () => {
-                button.style.transform = 'scale(1)';
-            });
-        });
-    </script>
+
 </body>
 </html>
